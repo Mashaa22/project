@@ -49,6 +49,7 @@ function fDetails(data, addData){
     addData.appendChild(description)
 
     const purchaseAlbum = document.createElement('button')
+    purchaseAlbum.className = 'btn'
 purchaseAlbum.innerText = 'Purchase'
 purchaseAlbum.addEventListener('click', () => {
     alert('Thank you for you purchase')
@@ -60,6 +61,7 @@ addData.appendChild(purchaseAlbum)
     const likeButton = document.createElement('button')
     likeButton.innerHTML = `likes <span id="like_value">0</span>`
     addData.appendChild(likeButton)
+    likeButton.className = 'btn'
     likeButton.addEventListener('click', () => {
         let likeSpan = document.getElementById
             ("like_value")
@@ -103,6 +105,7 @@ addData.appendChild(purchaseAlbum)
     commentdiv.appendChild(textArea)
 
     const cButton = document.createElement('button')
+    cButton.className = 'btn'
     cButton.innerHTML = 'Submit'
     commentdiv.appendChild(cButton)
 

@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url("https://previews.123rf.com/images/vlastas/vlastas1302/vlastas130200020/17895940-music-background-in-the-light-color.jpg");
+    background-image: url("./assets/music.webp");
 }
 
 .area {
@@ -46,18 +46,31 @@ body{
 
    #albumList{
     line-height: 3em;
-    margin: 0px 0 15px 0px;
-    padding: 30px; 
+    margin: 20px 0 15px 0px;
+    padding: 0px 0px 0px 200px; 
+    padding: ;
 }
+
 li{
     list-style: none;
     color: rgb(144, 28, 168);
+    font-size: large;
+    font-weight: 600;
+    font-style: italic;
 }
 
   .img-container{
     height: 500px;
     width: 700px;
   }
+
+.btn{
+    background-color:#3b3b7d;
+    color: #fff;
+    border:none; 
+    border-radius:10px; 
+    padding:5px;
+}
   
 .comment-container{
     height: 15vh;
