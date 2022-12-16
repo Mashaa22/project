@@ -28,4 +28,6 @@ function loadAlbums() {
                 })
             });
         })
-        }
+}
+document.addEventListener('DOMContentLoaded', loadAlbums, )
+function fDetails(data, addData)
