@@ -42,3 +42,16 @@ function fDetails(data, addData){
     const description = document.createElement('p')
     description.innerText = data.description
     addData.appendChild(description)
+
+    const purchaseAlbum = document.createElement('button')
+purchaseAlbum.innerText = 'Purchase'
+purchaseAlbum.addEventListener('click', () => {
+    alert('Thank you for you purchase')
+ })
+
+addData.appendChild(purchaseAlbum)
+ 
+
+    const likeButton = document.createElement('button')
+    likeButton.innerHTML = `like <span id="like_value">1</span>`
+addData.appendChild(likeButton)
