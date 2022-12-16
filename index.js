@@ -24,12 +24,13 @@ function loadAlbums() {
         
                 albumList.addEventListener('click', () =>{
                     albumSetup.innerHTML = ''
-                    fDetails(albums, albumSetup)
+                    fDetails(albums, albumSetup,)
                 })
             });
         })
 }
-document.addEventListener('DOMContentLoaded', loadAlbums, )
+
+document.addEventListener('DOMContentLoaded', loadAlbums,)
 function fDetails(data, addData){
     const title = document.createElement('h2')
     title.innerText = data.title
@@ -53,7 +54,7 @@ addData.appendChild(purchaseAlbum)
  
 
     const likeButton = document.createElement('button')
-    likeButton.innerHTML = `like <span id="like_value">1</span>`
+    likeButton.innerHTML = `likes <span id="like_value">0</span>`
     addData.appendChild(likeButton)
     likeButton.addEventListener('click', () => {
         let likeSpan = document.getElementById
@@ -64,27 +65,47 @@ addData.appendChild(purchaseAlbum)
         likeSpan.innerText = sumLike
     });
 
-    var post= document.getElementById("post");
-post.addEventListener("click", function(){
-var commentBoxValue= document.getElementById("comment-box").value;
+    // let comm = function App() {
+    //     return (
+    //         <div className="main-container">
+    //             <div>
+    //                 <h3>Comment</h3>
+    //                 <textarea />
+    //                 <button>Submit</button>
+    //             </div>
+    //         </div>
+    //     )
+    // }
 
-var li = document.createElement("li");
-var text = document.createTextNode(commentBoxValue);
-li.appendChild(text);
-document.getElementById("unordered")
-addData.appendChild(li);
+    // export default comm;
+    
+    const container = document.createElement('section')
+    container.className = 'container'
+    const commentdiv = document.createElement('div')
+    commentdiv.className = 'styleContainer'
+    container.appendChild(commentdiv)
+    const cHeader = document.createElement('h3')
+    cHeader.innerHTML = 'comment'
+    commentdiv.appendChild(cHeader )
+    const textArea = document.createElement('textarea')
+    commentdiv.appendChild(textArea)
+    const cButton = document.createElement('button')
+    cButton.innerHTML = 'Submit'
+    commentdiv.appendChild(cButton)
+    addData.appendChild(container)
 
-});
-// '(local '(function))' App() {
-//     return (
-//         <div className="main-container">
-//             <div>
-//                 <h3>Comment</h3>
-//                 <textarea />
-//                 <button>Submit</button>
-//             </div>
-//         </div>
-//     )
-// }
 
+
+    // const documentFragment = document.createDocumentFragment();
+    // documentFragment.appendChild(container);
+    // container.appendChild(cHeader);
+    // container.appendChild(textArea);
+    // container.appendChild(cButton);
+    // addData.appendChild(documentFragment)
+
+    // addData.append(container, cHeader, textArea, cButton)
+
+//     container.innerHTML+= cHeader.outerHTML + textArea.outerHTML + cButton.outerHTML ;
+// listElement.appendChild(listItem);
+    
 } 
