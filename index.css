@@ -44,22 +44,36 @@ body{
   }
   
 
-   #albumList{
+#albumList{
     line-height: 3em;
     margin: 20px 0 15px 0px;
-    padding: 0px 0px 0px 200px; 
-    padding: ;
+    padding: 0px 300px 0px 200px; 
+
 }
 
-li{
+#albumSetup {
+    margin-right: 20%;
+    position: relative;
+}
+
+p{
+    font-weight: 600;
+}
+
+li {
     list-style: none;
-    color: rgb(144, 28, 168);
-    font-size: large;
+    color: rgb(0, 0, 0);
+    font-size: larger;
     font-weight: 600;
     font-style: italic;
+} 
+
+li:hover{
+    cursor: pointer;
 }
 
-  .img-container{
+
+.img-container {
     height: 500px;
     width: 700px;
   }
@@ -74,7 +88,6 @@ li{
   
 .comment-container{
     height: 15vh;
-    display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
@@ -82,17 +95,21 @@ li{
     position:fixed ;
     top: 740px;
 }
+
 .style-container{
     display: flex;
     flex-direction: column;
     align-items: flex-start;    
 }
+
 .comment-header{
     margin: 12px 0;
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
-   font-weight: 500; 
+   font-weight: 1000; 
+   color: #3b3b7d;
 }
+
 .text-area{
     height: 75px;
     width: 400px;

@@ -33,7 +33,10 @@ function loadAlbums() {
 }
 
 
-document.addEventListener('DOMContentLoaded', loadAlbums,)
+document.addEventListener(
+    'DOMContentLoaded', loadAlbums,)
+
+    
 function fDetails(data, addData){
     const title = document.createElement('h2')
     title.innerText = data.title
@@ -45,7 +48,8 @@ function fDetails(data, addData){
     addData.appendChild(poster)
     
     const description = document.createElement('p')
-    description.innerText = data.description
+    description.className = 'album-name'
+    description.innerText = `By : ${data.description}`
     addData.appendChild(description)
 
     const purchaseAlbum = document.createElement('button')
@@ -121,11 +125,9 @@ addData.appendChild(purchaseAlbum)
         var text = document.createTextNode(commentBox)
         li.appendChild(text)
         comment_box.appendChild(li)
-
-    } )
-    
-
-
+        li.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});;
+    })
+        
     // const documentFragment = document.createDocumentFragment();
     // documentFragment.appendChild(container);
     // container.appendChild(cHeader);
