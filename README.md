@@ -41,4 +41,4 @@ Here is the link [SoundValley.App](https://mashaa22.github.io/project/)
     - +25412345678
 
 ## License
-Licenced under the [MT-licence]() Copyright (c) 2022 **Alex Maranga
+Licenced under the [MT-licence](https://github.com/Mashaa22/project/blob/main/license) Copyright (c) 2022 **Alex Maranga
