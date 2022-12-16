@@ -37,6 +37,7 @@ function fDetails(data, addData){
     addData.appendChild(title)
     
     const poster = document.createElement('img')
+    poster.className = 'img-container'
     poster.src = data.poster
     addData.appendChild(poster)
     
@@ -80,21 +81,30 @@ addData.appendChild(purchaseAlbum)
     // export default comm;
     
     const container = document.createElement('section')
-    container.className = 'container'
+    container.className = 'comment-container'
+
     const commentdiv = document.createElement('div')
-    commentdiv.className = 'styleContainer'
+    commentdiv.className = 'style-Container'
     container.appendChild(commentdiv)
+
+
     const cHeader = document.createElement('h3')
     cHeader.innerHTML = 'comment'
-    commentdiv.appendChild(cHeader )
+    cHeader.className = 'comment-header'
+    commentdiv.appendChild(cHeader)
+    
+
     const textArea = document.createElement('textarea')
     commentdiv.appendChild(textArea)
+    textArea.className = 'text-area'
+
+
     const cButton = document.createElement('button')
     cButton.innerHTML = 'Submit'
     commentdiv.appendChild(cButton)
+
+
     addData.appendChild(container)
-
-
 
     // const documentFragment = document.createDocumentFragment();
     // documentFragment.appendChild(container);
@@ -103,9 +113,7 @@ addData.appendChild(purchaseAlbum)
     // container.appendChild(cButton);
     // addData.appendChild(documentFragment)
 
-    // addData.append(container, cHeader, textArea, cButton)
 
-//     container.innerHTML+= cHeader.outerHTML + textArea.outerHTML + cButton.outerHTML ;
-// listElement.appendChild(listItem);
+
     
 } 
