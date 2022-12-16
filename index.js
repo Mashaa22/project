@@ -63,3 +63,28 @@ addData.appendChild(purchaseAlbum)
         sumLike = sumLike + likeValue
         likeSpan.innerText = sumLike
     });
+
+    var post= document.getElementById("post");
+post.addEventListener("click", function(){
+var commentBoxValue= document.getElementById("comment-box").value;
+
+var li = document.createElement("li");
+var text = document.createTextNode(commentBoxValue);
+li.appendChild(text);
+document.getElementById("unordered")
+addData.appendChild(li);
+
+});
+// '(local '(function))' App() {
+//     return (
+//         <div className="main-container">
+//             <div>
+//                 <h3>Comment</h3>
+//                 <textarea />
+//                 <button>Submit</button>
+//             </div>
+//         </div>
+//     )
+// }
+
+} 
