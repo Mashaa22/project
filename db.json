@@ -1,1 +1,76 @@
-
+{
+  "albums": [
+    {
+      "id": "1",
+      "title": "Her Loss",
+      "description": "Drake & 21Savage",
+      "poster": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2022%2F11%2Fdrake-21-savage-her-loss-cover-art-revealed-000.jpg?w=960&cbr=1&q=90&fit=max"
+    },
+    {
+      "id": "2",
+      "title": "Syre",
+      "description": "Jaden Smith",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/f/f8/SyreJadenSmith.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Hotel Diablo",
+      "description": "M.G.Kelly",
+      "poster": "https://i1.sndcdn.com/artworks-bEhBXPysaepybWsQ-DaZ3tQ-t500x500.jpg"
+    },
+    {
+      "id": "4",
+      "title": "E.A.Love Letter",
+      "description": "6lack",
+      "poster": "https://cdns-images.dzcdn.net/images/cover/16388279eb839ab223cb6a92396293cd/350x350.jpg"
+    },
+    {
+      "id": "5",
+      "title": "ERYS",
+      "description": "Jaden Smith",
+      "poster": "https://media.pitchfork.com/photos/5d1cc1583046210009997097/1:1/w_600/Jaden_Erys.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Dawn FM",
+      "description": "The Weekend",
+      "poster": "https://preview.redd.it/hsbd62y6ro981.png?width=640&crop=smart&auto=webp&s=655ce76a09698f45448832f710a2e9c80e56eeee"
+    },
+    {
+      "id": "7",
+      "title": "Heroes & Villians",
+      "description": "Metro Boomin",
+      "poster": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2022%2F12%2Fmetro-boomin-heroes-and-villains-album-stream-000.jpg?w=960&cbr=1&q=90&fit=max"
+    },
+    {
+      "id": "8",
+      "title": "Midnights",
+      "description": "Taylor Swift",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDNfIsLGcavLCpnqF2M6ugcTq9qSnNP6bmWaCvesmAavHoHXHoM854Bpy0oYvHGKnomE4&usqp=CAU"
+    },
+    {
+      "id": "9",
+      "title": "Christmas",
+      "description": "Michea Buble",
+      "poster": "https://linkstorage.linkfire.com/medialinks/images/0fa87854-02dd-4b15-ad4e-7f9bbbc6fc9d/artwork-440x440.jpg"
+    },
+    {
+      "id": "10",
+      "title": "Dangerous",
+      "description": "Morgan Wallen",
+      "poster": "https://musicrow.com/wp-content/uploads/2021/11/Screen-Shot-2021-11-15-at-10.00.12-AM.png"
+    },
+    {
+      "id": "11",
+      "title": "Thriller",
+      "description": "Micheal Jackson",
+      "poster": "https://static.dw.com/image/63920593_605.jpg"
+    },
+    {
+      "id": "12",
+      "title": "ctrl",
+      "description": "Sza",
+      "poster": "https://static.hiphopdx.com/2017/06/SZA-CTRL-album-640x480.jpg"
+    }
+  ]
+}
