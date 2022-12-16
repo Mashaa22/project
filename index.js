@@ -54,4 +54,12 @@ addData.appendChild(purchaseAlbum)
 
     const likeButton = document.createElement('button')
     likeButton.innerHTML = `like <span id="like_value">1</span>`
-addData.appendChild(likeButton)
+    addData.appendChild(likeButton)
+    likeButton.addEventListener('click', () => {
+        let likeSpan = document.getElementById
+            ("like_value")
+        let likeValue = parseInt(likeSpan.innerText)
+        let sumLike = 1
+        sumLike = sumLike + likeValue
+        likeSpan.innerText = sumLike
+    });
