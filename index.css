@@ -1,10 +1,59 @@
-/* .navbar{
-    background-color: ; */
-  /* } */
-  body {
-    background: dodgerblue linear-gradient(45deg, aqua, dodgerblue, deeppink) fixed;
-  
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+ 
+.navbar{
+    background-color: rgb(149, 137, 108);
+}
+
+body{
+    background-image: url("https://previews.123rf.com/images/vlastas/vlastas1302/vlastas130200020/17895940-music-background-in-the-light-color.jpg");
+}
+
+.area {
+    justify-content: center;
+    text-align: enter;
+    font-size: 3.0em;
+    color: rgb(228, 202, 236);
+    letter-spacing: -7px;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: blur .75s ease-out infinite;
+    text-shadow: 0px 0px 5px rgb(206, 177, 222), 0px 0px 7px #fff;
   }
+  
+  @keyframes blur {
+    from {
+      text-shadow:0px 0px 10px rgb(255, 255, 255),
+        0px 0px 10px #fff, 
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #fff,
+        0px 0px 50px #7B96B8,
+        0px 0px 150px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px 10px 100px #7B96B8,
+        0px -10px 100px #7B96B8,
+        0px -10px 100px #7B96B8;
+    }
+  }
+  
+
+   #albumList{
+    line-height: 3em;
+    margin: 0px 0 15px 0px;
+    padding: 30px; 
+}
+li{
+    list-style: none;
+    color: rgb(144, 28, 168);
+}
+
   .img-container{
     height: 500px;
     width: 700px;
@@ -17,11 +66,13 @@
     justify-content: flex-end;
     align-items: center;
     margin-right: 800px;
+    position:fixed ;
+    top: 740px;
 }
 .style-container{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start;    
 }
 .comment-header{
     margin: 12px 0;
@@ -34,3 +85,4 @@
     width: 400px;
     background-color: dodgerblue linear-gradient(45deg, aqua, dodgerblue, deeppink) fixed;
 }
+
