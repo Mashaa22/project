@@ -30,4 +30,15 @@ function loadAlbums() {
         })
 }
 document.addEventListener('DOMContentLoaded', loadAlbums, )
-function fDetails(data, addData)
+function fDetails(data, addData){
+    const title = document.createElement('h2')
+    title.innerText = data.title
+    addData.appendChild(title)
+    
+    const poster = document.createElement('img')
+    poster.src = data.poster
+    addData.appendChild(poster)
+    
+    const description = document.createElement('p')
+    description.innerText = data.description
+    addData.appendChild(description)
