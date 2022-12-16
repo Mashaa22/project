@@ -1,12 +1,14 @@
+
+
 function loadAlbums() {
 
     const Albums = document.querySelector('#albumList')
     
     const albumSetup = document.querySelector('#albumSetup')
     
-    fetch('http://localhost:3000/albums')
-    .then((response) => response.json())
-    .then((data) => (data, albumSetup))
+    // fetch('http://localhost:3000/albums')
+    // .then((response) => response.json())
+    // .then((data) => (data, albumSetup))
     
     
     fetch('http://localhost:3000/albums')
@@ -29,6 +31,7 @@ function loadAlbums() {
             });
         })
 }
+
 
 document.addEventListener('DOMContentLoaded', loadAlbums,)
 function fDetails(data, addData){
@@ -95,16 +98,30 @@ addData.appendChild(purchaseAlbum)
     
 
     const textArea = document.createElement('textarea')
-    commentdiv.appendChild(textArea)
     textArea.className = 'text-area'
-
+    textArea.value = ''
+    commentdiv.appendChild(textArea)
 
     const cButton = document.createElement('button')
     cButton.innerHTML = 'Submit'
     commentdiv.appendChild(cButton)
 
+    const comment_box = document.createElement('ul')
+    comment_box.className = 'comment-box'
+    commentdiv.appendChild(comment_box)
 
     addData.appendChild(container)
+
+    cButton.addEventListener("click", () => {
+        let commentBox = textArea.value
+        var li = document.createElement('li')
+        var text = document.createTextNode(commentBox)
+        li.appendChild(text)
+        comment_box.appendChild(li)
+
+    } )
+    
+
 
     // const documentFragment = document.createDocumentFragment();
     // documentFragment.appendChild(container);
@@ -112,8 +129,6 @@ addData.appendChild(purchaseAlbum)
     // container.appendChild(textArea);
     // container.appendChild(cButton);
     // addData.appendChild(documentFragment)
-
-
 
     
 } 

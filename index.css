@@ -1,6 +1,6 @@
-.navbar{
-    background-color: ;
-  }
+/* .navbar{
+    background-color: ; */
+  /* } */
   body {
     background: dodgerblue linear-gradient(45deg, aqua, dodgerblue, deeppink) fixed;
   
@@ -9,6 +9,7 @@
     height: 500px;
     width: 700px;
   }
+  
 .comment-container{
     height: 15vh;
     display: flex;
