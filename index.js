@@ -1,5 +1,3 @@
-
-
 function loadAlbums() {
 
     const Albums = document.querySelector('#albumList')
@@ -107,16 +105,16 @@ addData.appendChild(purchaseAlbum)
         li.appendChild(text)
         comment_box.appendChild(li)
         li.scrollIntoView({behavior: "smooth"});;
-    })
-
-
-        
-    // const documentFragment = document.createDocumentFragment();
-    // documentFragment.appendChild(container);
-    // container.appendChild(cHeader);
-    // container.appendChild(textArea);
-    // container.appendChild(cButton);
-    // addData.appendChild(documentFragment)
-
-    
+    })     
 } 
+
+let myImage = document.getElementById('img');
+myImage.onclick = function () {
+    let mySrc = myImage.getAttribute('src');
+    if (mySrc === "images/release2.webp")
+    {
+        myImage.setAttribute('src', "images/release3.jpg")
+    } else {
+        myImage.setAttribute('src', "images/release2.webp")
+    } 
+}
