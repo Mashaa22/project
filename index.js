@@ -5,11 +5,7 @@ function loadAlbums() {
     const Albums = document.querySelector('#albumList')
     
     const albumSetup = document.querySelector('#albumSetup')
-    
-    // fetch('http://localhost:3000/albums')
-    // .then((response) => response.json())
-    // .then((data) => (data, albumSetup))
-    
+     
     
     fetch('http://localhost:3000/albums')
     .then(resp => resp.json())
@@ -35,7 +31,6 @@ function loadAlbums() {
 
 document.addEventListener(
     'DOMContentLoaded', loadAlbums,)
-
     
 function fDetails(data, addData){
     const title = document.createElement('h2')
@@ -74,20 +69,6 @@ addData.appendChild(purchaseAlbum)
         sumLike = sumLike + likeValue
         likeSpan.innerText = sumLike
     });
-
-    // let comm = function App() {
-    //     return (
-    //         <div className="main-container">
-    //             <div>
-    //                 <h3>Comment</h3>
-    //                 <textarea />
-    //                 <button>Submit</button>
-    //             </div>
-    //         </div>
-    //     )
-    // }
-
-    // export default comm;
     
     const container = document.createElement('section')
     container.className = 'comment-container'
@@ -125,8 +106,10 @@ addData.appendChild(purchaseAlbum)
         var text = document.createTextNode(commentBox)
         li.appendChild(text)
         comment_box.appendChild(li)
-        li.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});;
+        li.scrollIntoView({behavior: "smooth"});;
     })
+
+
         
     // const documentFragment = document.createDocumentFragment();
     // documentFragment.appendChild(container);

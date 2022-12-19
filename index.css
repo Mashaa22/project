@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url("./assets/music.webp");
+    background-image: url("images/music.webp");
 }
 
 .area {
@@ -47,12 +47,12 @@ body{
 #albumList{
     line-height: 3em;
     margin: 20px 0 15px 0px;
-    padding: 0px 300px 0px 200px; 
+    padding: 0px 300px 0px 400px; 
 
 }
 
 #albumSetup {
-    margin-right: 20%;
+    margin-right: 12%;
     position: relative;
 }
 
