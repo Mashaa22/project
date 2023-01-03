@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "json-server": "^0.17.1"
+  },
+  "name": "project",
+  "description": "## Project Description     The application showcases how incorporate HTML, CSS, JavaScript and use of public JSON servers.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mashaa22/project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mashaa22/project/issues"
+  },
+  "homepage": "https://github.com/Mashaa22/project#readme"
+}
