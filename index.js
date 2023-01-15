@@ -68,7 +68,7 @@ addData.appendChild(purchaseAlbum)
         likeSpan.innerText = sumLike
     });
     
-    const container = document.createElement('section')
+    const container  = document.createElement('section')
     container.className = 'comment-container'
 
     const commentdiv = document.createElement('div')
